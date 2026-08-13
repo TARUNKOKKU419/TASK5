@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Implementation Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .internal-box {
+            background-color: #ffe0b2;
+            border-left: 6px solid #ff9800;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Implementation Methods</h1>
+
+    <div class="inline-box" style="background-color: #c8e6c9; color: #2e7d32; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 2px solid #4caf50;">
+        <h2>1. Inline CSS</h2>
+        <p>This box is styled directly using the <code>style=""</code> attribute inside the HTML tag. It overrides internal and external styles.</p>
+    </div>
+
+    <div class="internal-box">
+        <h2>2. Internal CSS</h2>
+        <p>This box is styled using the <code>.internal-box</code> class defined in the <code>&lt;style&gt;</code> block at the top of this document.</p>
+    </div>
+
+    <div class="external-box">
+        <h2>3. External CSS</h2>
+        <p>This box is styled using the <code>.external-box</code> class defined in our separate <code>style.css</code> file.</p>
+    </div>
+
+</body>
+</html>
